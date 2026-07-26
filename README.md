@@ -2,80 +2,124 @@
 
 ## 📌 Overview
 
-This project performs real-time object detection using YOLOv8. It supports webcam input as well as video file input and displays bounding boxes with class labels and confidence scores.
+This project performs object detection using **YOLOv8**. It provides:
+
+- **Real-time webcam detection** (Local)
+- **Image upload detection** (Streamlit Web App)
+
+Detected objects are displayed with **bounding boxes, class labels, and confidence scores**.
 
 ---
 
 ## 🚀 Features
 
-* Real-time object detection
-* Webcam and video file support
-* Bounding boxes with labels and confidence
-* Lightweight YOLOv8 model (yolov8n)
+- ✅ Real-time object detection
+- ✅ Image upload through Streamlit
+- ✅ Webcam detection (local)
+- ✅ Bounding boxes with class labels
+- ✅ Confidence score display
+- ✅ Lightweight YOLOv8 Nano model
 
 ---
 
 ## 🛠 Tech Stack
 
-* Python
-* OpenCV
-* Ultralytics YOLOv8
+- Python
+- OpenCV
+- Streamlit
+- Ultralytics YOLOv8
+- NumPy
+- Pillow
 
 ---
 
-## ⚙️ Setup Instructions
+## 📂 Project Structure
 
-### 1. Install dependencies
-
-```bash
-pip install ultralytics opencv-python
+```text
+YOLO-Object-Detection/
+│── app.py
+│── realtime_yolo.py
+│── requirements.txt
+│── README.md
 ```
 
 ---
 
-### 2. Download YOLOv8 model
+## ⚙️ Installation
 
-Download model automatically or manually:
+Clone the repository:
 
 ```bash
-yolo detect predict model=yolov8n.pt source=0
+git clone https://github.com/your-username/YOLO-Object-Detection.git
+cd YOLO-Object-Detection
 ```
 
-OR download from:
-https://github.com/ultralytics/ultralytics
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
 
 ---
 
-### 3. Run the project
+## ▶️ Run the Streamlit App
 
-#### Webcam:
+```bash
+streamlit run app.py
+```
+
+Upload an image and the model will detect objects automatically.
+
+---
+
+## ▶️ Run Real-Time Webcam Detection
 
 ```bash
 python realtime_yolo.py
 ```
 
-#### Video file:
+Press **Q** to exit.
 
-```bash
-python realtime_yolo.py video.mp4
+---
+
+## 🌐 Live Demo
+
+**Streamlit App:** *(Add your deployed Streamlit link here)*
+
+```
+https://your-app-name.streamlit.app
 ```
 
 ---
 
-## ⌨️ Controls
+## 📷 Sample Output
 
-* Press **Q** to exit
+- Detects multiple objects in an image
+- Displays bounding boxes
+- Shows object names and confidence scores
+
+---
+
+## 📦 Requirements
+
+- streamlit
+- ultralytics
+- opencv-python-headless
+- torch
+- torchvision
+- numpy
+- Pillow
 
 ---
 
 ## ⚠️ Notes
 
-* `yolov8n.pt` model file is not included due to size
-* Video files are not included
-* Model will download automatically if not present
+- `yolov8n.pt` is automatically downloaded if not available.
+- Webcam detection works only on the local machine.
+- The deployed Streamlit app supports image upload.
 
 ---
 
 ## 👨‍💻 Author
 
-Himanshu Pal
+**Himanshu Pal**
