@@ -82,24 +82,6 @@ Press **Q** to exit.
 
 ---
 
-## 🌐 Live Demo
-
-**Streamlit App:** *(Add your deployed Streamlit link here)*
-
-```
-https://your-app-name.streamlit.app
-```
-
----
-
-## 📷 Sample Output
-
-- Detects multiple objects in an image
-- Displays bounding boxes
-- Shows object names and confidence scores
-
----
-
 ## 📦 Requirements
 
 - streamlit
